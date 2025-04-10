@@ -1,0 +1,24 @@
+<span>
+  {{ $id := "null" }}
+  {{ if eq .Kind "taxonomy" }}
+    {{ $id = delimit (slice "likes_taxonomy_" .Page.Data.Plural) "" }}
+  {{ else if eq .Kind "term" }}
+    {{ $id = delimit (slice "likes_term_" .Page.Data.Term) "" }}
+  {{ else }}
+    {{ $translations := .AllTranslations }}
+    {{ with .File }}
+      {{ $path := .Path }}
+      {{range $translations}}
+        {{ $lang := print "." .Lang ".md" }}
+        {{ $path = replace $path $lang ".md" }}
+      {{end}}
+      {{ $id = delimit (slice "likes_" $path) "" }}
+    {{ end }}
+  {{ end }}
+  <span id="{{ $id }}"
+  class="animate-pulse ..."
+  title="likes"
+  aria-label="Cargando contador de me gusta"
+  aria-busy="true"></span>
+  <span class="inline-block align-text-bottom">{{ partial "icon.html" "heart" }}</span>
+</span>

@@ -1,0 +1,24 @@
+languageCode = "es"
+languageName = "Español"
+weight = 1
+title = "El Diario Del Codorniz"
+
+[params]
+  displayName = "Español"
+  isoCode = "es"
+  rtl = false
+  dateFormat = "02/01/2006"
+  logo = "img/blowfish_logo_transparent.png"
+  description = "Este es mi blog"
+copyright = ""
+
+[params.author]
+  name = "Ronny González"
+  email = "yordemblo@gmail.com"
+  # image = "img/author2.png"
+  headline = "Desarrollador Web"
+  bio = "Interesado en aprender y en los retos tecnológicos"
+  links = [
+    { x-twitter = "https://twitter.com/ronnyg2121" },
+    { github = "https://github.com/ronnyg2121" },
+  ]
