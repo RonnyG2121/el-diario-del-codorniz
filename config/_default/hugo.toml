@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://el-diario-del-codorniz.netlify.app/"
+baseURL = "https://el-diario-del-codorniz.netlify.app"
 defaultContentLanguage = "es"
 disableLanguages = [] #to allow translation work requiring shipping to production
 
