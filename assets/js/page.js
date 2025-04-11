@@ -36,7 +36,7 @@ if (typeof auth !== 'undefined') {
         liked_page = true
         document.querySelectorAll("span[id='button_likes_heart']")[0].style.display = ""
         document.querySelectorAll("span[id='button_likes_emtpty_heart']")[0].style.display = "none"
-        document.querySelectorAll("span[id='button_likes_text']")[0].innerText = ""
+        document.querySelectorAll("span[id='button_likes_text']")[0].innerText = "Quitar me gusta"
     }
 
 }
