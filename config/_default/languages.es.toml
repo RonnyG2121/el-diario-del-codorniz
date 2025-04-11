@@ -9,7 +9,7 @@ title = "El Diario Del Codorniz"
   rtl = false
   dateFormat = "02/01/2006"
   logo = "img/blowfish_logo_transparent.png"
-  description = "Este es mi blog"
+  description = ""
 copyright = ""
 
 [params.author]
@@ -19,6 +19,7 @@ copyright = ""
   headline = "Desarrollador Web"
   bio = "Interesado en aprender y en los retos tecnológicos"
   links = [
+         { linkedin = "https://www.linkedin.com/in/ronny-omnier-gonz%C3%A1lez-vargas-a12480186/" },
     { x-twitter = "https://twitter.com/ronnyg2121" },
     { github = "https://github.com/ronnyg2121" },
   ]

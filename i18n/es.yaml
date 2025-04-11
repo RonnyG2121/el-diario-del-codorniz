@@ -11,7 +11,7 @@ article:
     one: "{{ .Count }} minuto"
     other: "{{ .Count }} minutos"
   reading_time_title: "Tiempo de lectura"
-  table_of_contents: "Tabla de contenido"
+  table_of_contents: "Tabla de contenidos"
   word_count:
     one: "{{ .Count }} palabra"
     other: "{{ .Count }} palabras"
@@ -44,7 +44,7 @@ error:
 footer:
   dark_appearance: "Cambiar a modo oscuro"
   light_appearance: "Cambiar a modo claro"
-  powered_by: "Desarrollado con {{ .Hugo }} &amp; {{ .Theme }}"
+  powered_by: "Desarrollado por {{ .Hugo }} &amp; {{ .Theme }}"
 
 list:
   externalurl_title: "Enlace a página externa"

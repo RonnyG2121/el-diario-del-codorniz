@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.Params.isoCode | default (.Site.LanguageCode | default " en") }} {{- . -}} {{ end }}" dir="{{ if .Site.Params.rtl | default false -}}
+<html lang="{{ with .Site.Params.isoCode | default (.Site.LanguageCode | default " es") }} {{- . -}} {{ end }}" dir="{{ if .Site.Params.rtl | default false -}}
     rtl
   {{- else -}}
     ltr
@@ -33,10 +33,16 @@
     {{- partial "search.html" . -}}
     {{ end }}
   </div>
+      {{ if .Site.Params.buymeacoffee.globalWidget | default false }}
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="{{ .Site.Params.buymeacoffee.identifier }}" data-description="Ayúdame con un café"
+      data-message="{{ .Site.Params.buymeacoffee.globalWidgetMessage | default "" }}"
+      data-color="{{ .Site.Params.buymeacoffee.globalWidgetColor | default " #FFDD00" }}"
+      data-position="{{ .Site.Params.buymeacoffee.globalWidgetPosition | default " Left" }}" data-x_margin="18"
+      data-y_margin="18"></script>
+    {{ end }}
+
+
 </body>
-{{ if .Site.Params.buymeacoffee.globalWidget | default false }}
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-  data-id="{{ .Site.Params.buymeacoffee.identifier }}" data-description="Support me on Buy me a coffee!" data-message="{{ .Site.Params.buymeacoffee.globalWidgetMessage | default "" }}"
-  data-color="{{ .Site.Params.buymeacoffee.globalWidgetColor | default "#FFDD00" }}" data-position="{{ .Site.Params.buymeacoffee.globalWidgetPosition | default "Left" }}" data-x_margin="18" data-y_margin="18"></script>
-{{ end }}
+
 </html>
